@@ -69,7 +69,7 @@ export default function App() {
             <button
               key={points}
               onClick={() => onAddScore(teamColor, points)}
-              className={`flex items-center justify-center gap-2 text-white text-2xl font-semibold py-2 mb-4 mx-3rounded-xl ${team.button} transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg`}
+              className={`flex items-center justify-center gap-2 case3 text-white text-2xl font-semibold py-2 mb-4 mx-3 rounded-xl ${team.button} transition-transform duration-300 hover:-translate-y-1 hover:shadow-lg`}
             >
               <PlusIcon /> {points}
             </button>
@@ -128,7 +128,7 @@ export default function App() {
           <p className="text-gray-400 mt-3 text-2xl case2 ">THE ULTIMATE BATTLE</p>
         </header>
 
-        <div className="flex flex-row  case1 justify-around items-stretch w-full max-w-7xl gap-12 ">
+        <div className="flex flex-row  case1 justify-around items-stretch w-full max-w-7xl gap-12  ">
           <TeamPanel teamColor="blue" teamName="Blue Team" score={blueScore} onAddScore={handleAddScore} incrementData={blueIncrement} />
           <TeamPanel teamColor="red" teamName="Red Team" score={redScore} onAddScore={handleAddScore} incrementData={redIncrement} />
         </div>
@@ -136,8 +136,12 @@ export default function App() {
         <div className="mt-14 mb-10">
           <button
             onClick={handleReset}
-            className="flex items-center justify-center gap-3 text-white bg-gray-100 hover:bg-gray-600 text-3xl font-semibold  rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
-          >
+            className="flex items-center justify-center gap-3 case3
+            text-white bg-gray-900 hover:bg-gray-600 
+            dark:text-black dark:bg-gray-200 dark:hover:bg-gray-300 
+            text-3xl font-semibold rounded-xl shadow-lg 
+            transition-transform duration-300 hover:scale-105"
+           >
             <ResetIcon /> Reset Game
           </button>
         </div>
