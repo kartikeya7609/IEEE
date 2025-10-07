@@ -1,0 +1,6 @@
+@import "tailwindcss";
+.parent-container {
+  display: flex;
+  justify-content: center; /* Centers content horizontally along the main axis */
+  align-items: center;    /* Centers content vertically along the cross axis */
+}

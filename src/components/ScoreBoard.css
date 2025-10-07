@@ -1,0 +1,19 @@
+@media screen and (max-width: 900px) {
+
+.case1{
+    flex-wrap: wrap;
+}
+
+}
+@media screen and (max-width: 460px) {
+
+.case2{
+    padding: 0;
+    display:grid;
+    gap: 2rem;
+    width: 100%;
+    width: auto;
+    height:auto;
+    font-size: 1rem;
+}
+}
